@@ -8,6 +8,8 @@ video_capture =  cv2.VideoCapture(0)
 print(video_capture.get(3))
 print(video_capture.get(4))
 
+#
+
 
 while (video_capture.isOpened()):
     frame_value, frame = video_capture.read()

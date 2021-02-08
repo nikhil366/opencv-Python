@@ -13,7 +13,7 @@ arrow_on_image = cv2.arrowedLine(image,(0,255),(255,255),(0,0,255), 4)
 '''for draw a rectangle on image'''
 rectangle_on_image = cv2.rectangle(image,(380,0),(510,128),(0,0,255),-1)
 '''draw a circle on image'''
-circle_on_image = cv2.circle(image,(447,63),63,(255,0,255),-1)
+circle_on_image = cv2.circle(image,(391,251),63,(255,0,255),-1)
 '''put text on image'''
 font = cv2.FONT_HERSHEY_PLAIN
 put_text_on_image = cv2.putText(image,'welcome in opencv', (23,374),font, 3, (255,255,0), 5, cv2.LINE_AA)
