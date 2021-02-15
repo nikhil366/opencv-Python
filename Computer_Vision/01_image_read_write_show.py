@@ -1,8 +1,10 @@
 import cv2
+import numpy as np
 
 '''here this code is use for choose image from our systemand show in new window'''
 image_path = "/home/nikhil/Pictures/Webcam/nik.jpg"
-img = cv2.imread(image_path, -1)
+# img = cv2.imread(image_path, -1)
+img = np.zeros([512,512,3],np.uint8)
 cv2.imshow('image', img)
 k = cv2.waitKey(0) & 0xFF
 
