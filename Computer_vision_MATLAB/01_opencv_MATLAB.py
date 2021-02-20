@@ -10,13 +10,19 @@ from matplotlib import pyplot as plt
 
 image_path = "/home/nikhil/Pictures/Webcam/nik.jpg"
 image = cv2.imread(image_path)
-cv2.imshow('_nrml_image',image)
-image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
-plt.imshow(image)
-plt.show()
+while True:
 
-cv2.waitKey(0)
+    cv2.imshow('_nrml_image',image)
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
+    plt.imshow(image)
+    plt.show()
+
+    k = cv2.waitKey(0)
+    if k == 27:
+        break
+    
 cv2.destroyAllWindows()
 
 
