@@ -18,7 +18,8 @@ img2 = cv2.cvtColor(img1, cv2.COLOR_BGR2RGB)
 
 ret, mask = cv2.threshold(img2, 220, 255, cv2.THRESH_BINARY)
 print(ret)
-
+'''A kernal is normally a shape or square which we want to apply
+on image '''
 kernal = np.ones((5,5),np.uint8)
 '''dilation is use to remove extra dots or noise from image'''
 dilation = cv2.dilate(mask, kernal, iterations=2) # kernal is normaly a shape which we apply on image

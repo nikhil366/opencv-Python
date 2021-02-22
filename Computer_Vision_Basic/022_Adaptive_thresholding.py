@@ -18,13 +18,13 @@ image = cv2.imread(image_path)
 
 while True:
     ret, ATH = cv2.threshold(image,128,255,cv2.THRESH_BINARY)
-    ad_thre = cv2.adaptiveThreshold(image, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 11, 2)
+    # ad_thre = cv2.adaptiveThreshold(image, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 11, 2)
     ''' 
     here we apply simple thresholding but cons is half image is not showing
     or it is cover with black colour so in this type of cases we cant use 
     simple thresholding.
     '''
-    cv2.imshow('adptive_thresholding', ad_thre)
+    # cv2.imshow('adptive_thresholding', ad_thre)
     cv2.imshow('simpleTH1',ATH)
     cv2.imshow('nrml_imag',image)
 
