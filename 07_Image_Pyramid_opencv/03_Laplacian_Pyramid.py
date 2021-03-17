@@ -4,34 +4,6 @@ Pyramid we dont have any function for image conversion.
 In Laplacian Pyramid the result we got in the form of edge detection,
 result you will see in this code '''
 
-# import cv2
-
-# import numpy as np
-
-# image_path = ('/home/nikhil/Desktop/Data/nik.jpeg')
-# image = cv2.imread(image_path)
-
-# layer = image.copy()
-# gaussian_pyramid = [layer]
-
-# for i in range(6):
-#     layer = cv2.pyrDown(layer)
-#     gaussian_pyramid.append(layer)
-
-# layer = gaussian_pyramid[5]
-# print(gaussian_pyramid[5])
-# cv2.imshow('uper_layer_gaussian_pyramid',layer )
-
-# laplacian_Pyramid = [layer]
-# for i in range(5,0,-1):
-#     gaussian_upper_value = cv2.pyrUp(gaussian_pyramid[i])
-#     laplacian = cv2.subtract(gaussian_pyramid[i-1], gaussian_upper_value)
-#     cv2.imshow(str(i), laplacian)
-
-# cv2.imshow('nrmal_image',image)
-# cv2.waitKey(1) 
-# cv2.destroyAllWindows()   
-
 
 import cv2
 import numpy as np
